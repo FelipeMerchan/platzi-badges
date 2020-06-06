@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Anton');
 
+:root {
+  /* Colors */
+
+  /* Brand Colors */
+  --greenBrand: #7DCD40;
+  --twitterColor: #03a9f4;
+
+  /* Boolean Colors */
+  --negative: #CD4040;
+
+  /* Spacing */
+  --space: 10px;
+  --space-x2: 20px;
+  --space-x3: 30px;
+  --space-x4: 40px;
+  --space-x5: 50px;
+}
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -14,6 +31,10 @@ body {
 
 h1 {
   font-family: 'Anton', sans-serif;
+}
+
+figure {
+  margin: 0;
 }
 
 a.link-unstyled {
@@ -31,20 +52,20 @@ a.link-unstyled:hover {
 
 .btn.btn-primary {
   color: #fff;
-  background-color: #7DCD40;
-  border-color: #7DCD40;
+  background-color: var(--greenBrand);
+  border-color: var(--greenBrand);
 }
 
 .btn.btn-primary:not(:disabled):not(.disabled):hover {
   color: #fff;
-  background-color: #7DCD40;
-  border-color: #7DCD40;
+  background-color: var(--greenBrand);
+  border-color: var(--greenBrand);
 }
 
 .btn.btn-primary:not(:disabled):not(.disabled):active {
   color: #fff;
-  background-color: #7DCD40;
-  border-color: #7DCD40;
+  background-color: var(--greenBrand);
+  border-color: var(--greenBrand);
 }
 
 .btn.btn-primary:not(:disabled):not(.disabled):focus {
@@ -53,20 +74,20 @@ a.link-unstyled:hover {
 
 .btn.btn-danger {
   color: #fff;
-  background-color: #CD4040;
-  border-color: #CD4040;
+  background-color: var(--negative);
+  border-color: var(--negative);
 }
 
 .btn.btn-danger:not(:disabled):not(.disabled):hover {
   color: #fff;
-  background-color: #CD4040;
-  border-color: #CD4040;
+  background-color: var(--negative);
+  border-color: var(--negative);
 }
 
 .btn.btn-danger:not(:disabled):not(.disabled):active {
   color: #fff;
-  background-color: #CD4040;
-  border-color: #CD4040;
+  background-color: var(--negative);
+  border-color: var(--negative);
 }
 
 .btn.btn-danger:not(:disabled):not(.disabled):focus {

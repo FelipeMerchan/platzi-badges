@@ -1,0 +1,42 @@
+.Profile__container {
+  display: grid;
+  grid-row-gap: var(--space);
+}
+
+.Profile {
+  display: flex;
+  align-items: center;
+  height: auto;
+  padding: var(--space);
+}
+
+.Profile-image__container {
+  max-width: 100%;
+  margin-right: var(--space-x2)
+}
+
+.Profile__name {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.Profile__user-name {
+  font-size: 1.2em;
+  color: var(--twitterColor);
+}
+
+.Profile__user-name::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: var(--space);
+  background-image: url('../../images/twitter.svg');
+  background-size: contain;
+}
+
+.Profile__job-title {
+  margin-bottom: 0;
+  font-size: 1em;
+}
