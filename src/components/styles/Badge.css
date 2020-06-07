@@ -44,6 +44,6 @@
   justify-content: center;
   align-items: center;
   color: #98CA3F;
-  font-weight: bold;
+  font-weight: var(--bold);
   font-style: italic;
 }

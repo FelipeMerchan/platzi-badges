@@ -3,13 +3,27 @@
 
 :root {
   /* Colors */
-
   /* Brand Colors */
   --greenBrand: #7DCD40;
   --twitterColor: #03a9f4;
 
   /* Boolean Colors */
   --negative: #CD4040;
+
+  /* Backgrounds */
+  --blueBackground: #1b1b25;
+  --grayBackground: #F4F4F7;
+
+  /* Typographies */
+  --white: #ffffff;
+
+
+  /* Typography */
+  /* Font weight */
+  --light: 300;
+  --normal: 400;
+  --bold: 700;
+
 
   /* Spacing */
   --space: 10px;
@@ -26,7 +40,7 @@
 
 body {
   font-family: 'Lato', 'Helvetica Neue', sans-serif;
-  background-color: #F4F4F7;
+  background-color: var(--grayBackground);
 }
 
 h1 {
@@ -51,19 +65,19 @@ a.link-unstyled:hover {
 }
 
 .btn.btn-primary {
-  color: #fff;
+  color: var(--white);
   background-color: var(--greenBrand);
   border-color: var(--greenBrand);
 }
 
 .btn.btn-primary:not(:disabled):not(.disabled):hover {
-  color: #fff;
+  color: var(--white);
   background-color: var(--greenBrand);
   border-color: var(--greenBrand);
 }
 
 .btn.btn-primary:not(:disabled):not(.disabled):active {
-  color: #fff;
+  color: var(--white);
   background-color: var(--greenBrand);
   border-color: var(--greenBrand);
 }
@@ -73,19 +87,19 @@ a.link-unstyled:hover {
 }
 
 .btn.btn-danger {
-  color: #fff;
+  color: var(--white);
   background-color: var(--negative);
   border-color: var(--negative);
 }
 
 .btn.btn-danger:not(:disabled):not(.disabled):hover {
-  color: #fff;
+  color: var(--white);
   background-color: var(--negative);
   border-color: var(--negative);
 }
 
 .btn.btn-danger:not(:disabled):not(.disabled):active {
-  color: #fff;
+  color: var(--white);
   background-color: var(--negative);
   border-color: var(--negative);
 }

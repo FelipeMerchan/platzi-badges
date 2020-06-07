@@ -1,0 +1,71 @@
+.Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vw !important;
+  height: calc(100vh - 60px);
+  margin: 0;
+  background-color: var(--blueBackground);
+  background-image: url('../../images/stars.svg');
+  background-size: contain;
+}
+
+.Home > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: var(--space-x2);
+}
+
+.Badge-start {
+  color: var(--white);
+  font-size: 16px;
+  text-align: center;
+}
+
+.Badge-start__image__container,
+.Badge-start__title,
+.Badge-start__description {
+  text-align: initial;
+}
+
+.Badge-start__image__container {
+  max-width: 100%;
+  margin-bottom: var(--space-x2);
+}
+
+.Badge-start__image {
+  width: 100%;
+}
+
+.Badge-start__title {
+  font-size: 2.4em;
+}
+
+.Badge-start__description {
+  margin-bottom: var(--space-x2);
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+  .Home {
+    height: auto;
+  }
+
+  .Badge-start {
+    margin-bottom: var(--space-x5);
+    font-size: 12px;
+  }
+
+  .Badge-start__image__container,
+  .Badge-start__title,
+  .Badge-start__description {
+    text-align: center;
+  }
+
+  .Badge-start__image__container {
+    max-width: 250px;
+    margin: 0 auto var(--space-x2);
+  }
+}

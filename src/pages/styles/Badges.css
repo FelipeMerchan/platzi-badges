@@ -12,7 +12,8 @@
   align-items: center;
 }
 
-.Badges__container {
+.Badges__container,
+.Badges__buttons {
   width: 100%;
   max-width: 580px;
   margin: 0 auto;

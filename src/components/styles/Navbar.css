@@ -5,14 +5,14 @@
 }
 
 .Navbar__brand {
-  color: #ffffff;
+  color: var(--white);
 
   display: flex;
   align-items: center;
 }
 
 .Navbar__brand:hover {
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
 }
 

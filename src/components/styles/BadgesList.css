@@ -12,12 +12,14 @@
 
 .Profile-image__container {
   max-width: 100%;
-  margin-right: var(--space-x2)
+  margin-right: var(--space-x2);
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .Profile__name {
   margin-bottom: 0;
-  font-weight: 700;
+  font-weight: var(--bold);
   font-size: 1.2em;
 }
 
