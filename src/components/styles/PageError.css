@@ -1,0 +1,15 @@
+.PageError {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px);
+  width: 100%;
+  padding: 0 var(--space-x2);
+  background-color: var(--blueBackground);
+  background-image: url('../../images/stars.svg');
+}
+
+.PageError__image__container {
+  margin-bottom: var(--space-x2);
+}

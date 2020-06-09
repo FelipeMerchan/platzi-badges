@@ -1,24 +1,14 @@
-import React from 'react'
+import React from 'react';
 
 class BadgeForm extends React.Component {
-  state = {}
-
   handleClick = e => {
-    console.log('Button was clicked')
-  }
-
-  handleSubmit = e => {
-    e.preventDefault()
-    console.log('Form was submitted')
-    console.log(this.state)
-  }
+    console.log('Button was clicked');
+  };
 
   render() {
     return (
       <div>
-        <h1>New attendant</h1>
-
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.props.onSubmit}>
           <div className="form-group">
             <label>First Name</label>
             <input
@@ -73,6 +63,7 @@ class BadgeForm extends React.Component {
               value={this.props.formValues.twitter}
             />
           </div>
+
           <button
             type="button"
             onClick={this.handleClick}
@@ -80,10 +71,12 @@ class BadgeForm extends React.Component {
           >
             Save
           </button>
+
+          {this.props.error && (<p className="danger ">{this.props.error.message}</p>)}
         </form>
       </div>
-    )
+    );
   }
 }
 
-export default BadgeForm
+export default BadgeForm;

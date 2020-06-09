@@ -1,4 +1,4 @@
-.BadgesNew__hero {
+.BadgesEdit__hero {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -8,7 +8,7 @@
   margin-bottom: 1rem;
 }
 
-.BadgesNew__hero-image {
+.BadgesEdit__hero-image {
   max-height: 100px;
 }
 
