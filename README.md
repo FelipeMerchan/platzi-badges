@@ -22,11 +22,19 @@ You can execute the following command:
 
 ### Home Screen
 
-![Home Screen](https://github.com/FelipeMerchan/platzi-master-frontend-exercises/blob/master/src/images/preview-hero.png)
+![Home Screen](https://github.com/FelipeMerchan/platzi-badges/blob/master/src/images/preview-home.png)
 
-### Project Section
+### Badges list
 
-![Project Section](https://github.com/FelipeMerchan/platzi-master-frontend-exercises/blob/master/src/images/preview-section.jpg)
+![Project Section](https://github.com/FelipeMerchan/platzi-badges/blob/master/src/images/preview-badges-list.png)
+
+### Create a new badge
+
+![Project Section](https://github.com/FelipeMerchan/platzi-badges/blob/master/src/images/preview-create-a-new-badge.png)
+
+### Badge actions
+
+![Project Section](https://github.com/FelipeMerchan/platzi-badges/blob/master/src/images/preview-badge-actions.png)
 
 ## Demo
 
