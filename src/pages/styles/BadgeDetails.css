@@ -3,18 +3,16 @@
   padding: 2rem 0;
   background: url('../../images/stars.svg'), #1B1B25;
   background-repeat: repeat;
-  margin-bottom: 1rem;
+  margin-block-end: var(--space-x5);
   color: #ffffff;
+}
+
+.BadgeDetails__content {
+  padding-block-end: var(--space-x5);
 }
 
 .BadgeDetails__hero-attendant-name {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.BadgeDetails__buttons {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 1rem;
 }

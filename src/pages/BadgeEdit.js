@@ -74,7 +74,7 @@ class BadgeEdit extends React.Component {
           />
         </div>
 
-        <div className="container">
+        <div className="BadgesEdit__content container">
           <div className="row">
             <div className="col-6">
               <Badge

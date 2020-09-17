@@ -6,6 +6,10 @@
   margin-bottom: 1rem;
 }
 
+.Badge__container {
+  padding-block-end: var(--space-x5);
+}
+
 .Badges__hero>.Badges__container {
   display: flex;
   flex-direction: column;

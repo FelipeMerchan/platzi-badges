@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 
 import './styles/BadgeDetails.css'
@@ -21,7 +21,7 @@ function BadgeDetails (props) {
   const badge = props.badge
 
   return (
-    <div>
+    <Fragment>
       <div className="BadgeDetails__hero">
         <div className="container">
           <div className="row">
@@ -36,7 +36,7 @@ function BadgeDetails (props) {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="BadgeDetails__content container">
         <div className="row">
           <div className="col-6">
             <Badge
@@ -50,7 +50,7 @@ function BadgeDetails (props) {
           <div className="col-6">
             <h2>Actions</h2>
             <div>
-              <div>
+              <div className="mb-4">
                 <button
                   onClick={() => {
                     setCount(count + 1)
@@ -58,7 +58,7 @@ function BadgeDetails (props) {
                   className="btn btn-primary mr-4">
                   Increase Count: {count}
                 </button>
-                <Link className="btn btn-primary mb-4" to={`/badges/${badge.id}/edit`}>
+                <Link className="btn btn-primary" to={`/badges/${badge.id}/edit`}>
                   Edit
                 </Link>
               </div>
@@ -77,7 +77,7 @@ function BadgeDetails (props) {
           </div>
         </div>
       </div>
-    </div>
+    </Fragment>
   )
 }
 

@@ -57,7 +57,7 @@ class BadgeNew extends React.Component {
           />
         </div>
 
-        <div className="container">
+        <div className="BadgesNew__content container">
           <div className="row">
             <div className="col-6">
               <Badge
