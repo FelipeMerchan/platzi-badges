@@ -15,3 +15,9 @@
 .BadgesEdit__content {
   padding-block-end: var(--space-x5);
 }
+
+@media screen and (max-width: 768px) {
+  .BadgesEdit__content>.row>div {
+    padding-block-end: var(--space-x5);
+  }
+}
