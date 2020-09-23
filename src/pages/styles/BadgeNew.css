@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 2rem 0;
+  padding: var(--space-x4) 0;
   background: url('../../images/stars.svg'), #1B1B25;
   background-repeat: repeat;
   margin-block-end: var(--space-x5);
@@ -14,4 +14,10 @@
 
 .BadgesNew__content {
   padding-block-end: var(--space-x5);
+}
+
+@media screen and (max-width: 768px) {
+  .BadgesNew__content>.row>div {
+    padding-block-end: var(--space-x5);
+  }
 }

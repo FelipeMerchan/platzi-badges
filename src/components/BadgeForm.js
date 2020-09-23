@@ -8,7 +8,7 @@ class BadgeForm extends React.Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.props.onSubmit}>
+        <form className="d-flex flex-column" onSubmit={this.props.onSubmit}>
           <div className="form-group">
             <label>First Name</label>
             <input
@@ -67,7 +67,7 @@ class BadgeForm extends React.Component {
           <button
             type="button"
             onClick={this.handleClick}
-            className="btn btn-primary"
+            className="btn btn-primary align-self-end"
           >
             Save
           </button>

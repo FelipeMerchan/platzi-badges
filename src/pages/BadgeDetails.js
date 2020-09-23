@@ -24,11 +24,11 @@ function BadgeDetails (props) {
     <Fragment>
       <div className="BadgeDetails__hero">
         <div className="container">
-          <div className="row">
-            <div className="col-6">
-              <img src={confLogo} alt="Logo de la conferencia" />
+          <div className="row text-center text-md-left">
+            <div className="col-12 col-md-6">
+              <img src={confLogo} width="280" alt="Logo de la conferencia" />
             </div>
-            <div className="col-6 BadgeDetails__hero-attendant-name">
+            <div className="col-12 col-md-6 BadgeDetails__hero-attendant-name">
               <h1>
                 {badge.firstName} {badge.lastName}
               </h1>
@@ -38,7 +38,7 @@ function BadgeDetails (props) {
       </div>
       <div className="BadgeDetails__content container">
         <div className="row">
-          <div className="col-6">
+          <div className="col-12 col-md-6">
             <Badge
               firstName={badge.firstName}
               lastName={badge.lastName}
@@ -47,16 +47,12 @@ function BadgeDetails (props) {
               jobTitle={badge.jobTitle}
             />
           </div>
-          <div className="col-6">
+          <div className="col-12 col-md-6 text-center text-md-left">
             <h2>Actions</h2>
             <div>
               <div className="mb-4">
-                <button
-                  onClick={() => {
-                    setCount(count + 1)
-                  }}
-                  className="btn btn-primary mr-4">
-                  Increase Count: {count}
+                <button onClick={props.onOpenModal} className="btn btn-danger mr-4">
+                  Delete
                 </button>
                 <Link className="btn btn-primary" to={`/badges/${badge.id}/edit`}>
                   Edit
@@ -64,8 +60,12 @@ function BadgeDetails (props) {
               </div>
 
               <div>
-                <button onClick={props.onOpenModal} className="btn btn-danger">
-                  Delete
+                <button
+                  onClick={() => {
+                    setCount(count + 1)
+                  }}
+                  className="btn btn-primary">
+                  Increase Count: {count}
                 </button>
                 <DeleteBadgeModal
                   isOpen={props.modalIsOpen}

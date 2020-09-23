@@ -76,7 +76,7 @@ class BadgeEdit extends React.Component {
 
         <div className="BadgesEdit__content container">
           <div className="row">
-            <div className="col-6">
+            <div className="col-12 col-md-6">
               <Badge
                 firstName={this.state.form.firstName || 'FIRST_NAME'}
                 lastName={this.state.form.lastName || 'LAST_NAME'}
@@ -86,7 +86,7 @@ class BadgeEdit extends React.Component {
                 avatarUrl="https://1.gravatar.com/avatar/747c9ab5796cdc4d11bdc15d4814d0a1"
               />
             </div>
-            <div className="col-6">
+            <div className="col-12 col-md-6">
               <h1>Edit Attendant</h1>
               <BadgeForm
                 onChange={this.handleChange}
