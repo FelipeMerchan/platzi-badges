@@ -1,9 +1,9 @@
 .Badges__hero {
   width: 100%;
-  padding: 2rem 0;
+  padding: var(--space-x4) 0;
   background: url('../../images/stars.svg'), #1B1B25;
   background-repeat: repeat;
-  margin-bottom: 1rem;
+  margin-block-end: var(--space-x2);
 }
 
 .Badge__container {
@@ -25,11 +25,17 @@
 }
 
 .Badges_conf-logo {
-  margin-bottom: 2rem;
+  width: 350px;
 }
 
 .Badges__buttons {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Badges_conf-logo {
+    width: 250px;
+  }
 }
