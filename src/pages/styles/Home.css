@@ -50,6 +50,7 @@
 
 @media screen and (max-width: 768px) {
   .Home {
+    min-height: calc(100vh - 60px);
     height: auto;
   }
 
