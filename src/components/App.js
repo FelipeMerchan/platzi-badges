@@ -12,17 +12,17 @@ import NotFound from '../pages/NotFound'
 function App() {
   return (
     <BrowserRouter>
-    <Layout>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/badges" component={Badges} />
-        <Route exact path="/badges/new" component={BadgeNew} />
-        <Route exact path="/badges/:badgeId" component={BadgeDetails} />
-        <Route exact path="/badges/:badgeId/edit" component={BadgeEdit} />
-        <Route path="/404" component={NotFound} />
-        <Redirect from="*" to="/404" />
-      </Switch>
-    </Layout>
+      <Layout>
+        <Switch>
+          <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home} />
+          <Route exact path={`${process.env.PUBLIC_URL}/badges`} component={Badges} />
+          <Route exact path={`${process.env.PUBLIC_URL}/badges/new`} component={BadgeNew} />
+          <Route exact path={`${process.env.PUBLIC_URL}/badges/:badgeId`} component={BadgeDetails} />
+          <Route exact path={`${process.env.PUBLIC_URL}/badges/:badgeId/edit`} component={BadgeEdit} />
+          <Route path="/404" component={NotFound} />
+          <Redirect from="*" to="/404" />
+        </Switch>
+      </Layout>
     </BrowserRouter>
   )
 }
