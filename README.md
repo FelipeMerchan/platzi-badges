@@ -38,7 +38,7 @@ You can execute the following command:
 
 ## Demo
 
-If you want to see the demo you can visit [Demo](http://https://felipemerchan.github.io/platzi-master-frontend-exercises/ "Demo").
+If you want to see the demo you can visit [Demo](https://platzi-badges.felipemerchan.vercel.app/ "Demo").
 
 ## Author
 
